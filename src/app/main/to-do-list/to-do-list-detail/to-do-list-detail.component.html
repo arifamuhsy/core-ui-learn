@@ -1,4 +1,4 @@
-<p>to-do-list-main works!</p>
+<p>to-do-list-detail works!</p>
 
 <c-row>
   <c-col md="6">
@@ -26,7 +26,16 @@
             class="mt-2"
             cButton
             >
-            Submit
+            Update
+          </button>
+
+            <button
+            (click)="back()"
+            color="primary"
+            class="mt-2 ms-2"
+            cButton
+            >
+            Back
           </button>
 
             <!-- <button
@@ -38,42 +47,6 @@
             Reset
           </button> -->
         </form>
-
-        <table [striped]="true" cTable>
-          <thead>
-            <tr>
-              <th>No</th>
-              <th>To Do</th>
-              <th>Time</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let todo of toDo">
-              <td scope="col">{{todo.id}}</td>
-              <td>{{todo.toDo}}</td>
-              <td>{{todo.time}}</td>
-              <td>
-                <button
-                  (click)="deleteData(todo)"
-                  color="danger"
-                  class="mt-2 ms-1"
-                  cButton
-                  >
-                  Delete
-                </button>
-                <button
-                  (click)="updateData(todo)"
-                  color="success"
-                  class="mt-2 ms-1"
-                  cButton
-                  >
-                  Update
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </c-card-body>
     </c-card>
   </c-col>

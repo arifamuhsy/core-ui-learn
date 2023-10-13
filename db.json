@@ -15,19 +15,24 @@
   ],
   "todo": [
     {
-      "id": 1,
-      "todo": "some todo 1",
-      "time": 12
-    },
-    {
-      "id": 2,
-      "todo": "some todo 2",
-      "time": 12
-    },
-    {
       "id": 3,
-      "todo": "some todo 3",
+      "toDo": "some todo 3",
       "time": 5
+    },
+    {
+      "toDo": "asjid",
+      "time": 12,
+      "id": 4
+    },
+    {
+      "id": 6,
+      "toDo": "deploy",
+      "time": "17"
+    },
+    {
+      "id": 7,
+      "toDo": "gituuu",
+      "time": "9"
     }
   ],
   "profile": {
