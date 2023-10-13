@@ -38,6 +38,15 @@ export const navItems: INavData[] = [
       // }
     },
     {
+      name: 'To Do List',
+      url: '/to-do-list',
+      iconComponent: { name: 'cil-task' },
+      // badge: {
+      //   color: 'info',
+      //   text: 'NEW'
+      // }
+    },
+    {
       name: 'Streaming',
       url: '/streaming',
       iconComponent: { name: 'cil-speedometer' },

@@ -24,6 +24,10 @@ const routes: Routes = [
         path: 'form',
         loadChildren: () => import('./form/form.module').then((mod) => mod.FormParentModule)
       },
+      {
+        path: 'to-do-list',
+        loadChildren: () => import('./to-do-list/to-do-list.module').then((mod) => mod.ToDoListParentModule)
+      },
     ]
   }
 ];

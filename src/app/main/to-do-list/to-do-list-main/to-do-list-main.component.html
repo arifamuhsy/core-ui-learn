@@ -1,0 +1,61 @@
+<p>to-do-list-main works!</p>
+
+<c-row>
+  <c-col md="6">
+    <c-card>
+      <c-card-header class="bg-primary text-white">Form No Validation</c-card-header>
+      <c-card-body>
+        <form [formGroup]="form" (ngSubmit)="submitForm()" cForm novalidate>
+
+            <c-row class="mt-2">
+              <c-col sm="12" md="6">
+                <label for="toDo">To Do</label>
+                <input formControlName="toDo" type="text" placeholder="" class="mt-1" cFormControl/>
+              </c-col>
+
+              <c-col sm="12" md="6">
+                <label for="namaDepan">Time</label>
+                <input formControlName="time" type="text" placeholder="" class="mt-1" cFormControl/>
+              </c-col>
+
+            </c-row>
+
+            <button
+            (click)="submitForm()"
+            color="primary"
+            class="mt-2"
+            cButton
+            >
+            Submit
+          </button>
+
+            <!-- <button
+            (click)="resetForm()"
+            color="primary"
+            class="mt-2 ms-1"
+            cButton
+            >
+            Reset
+          </button> -->
+        </form>
+
+        <table [striped]="true" cTable>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>To Do</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let todo of toDo">
+              <th scope="col">{{todo.id}}</th>
+              <th>{{todo.todo}}</th>
+              <th>{{todo.time}}</th>
+            </tr>
+          </tbody>
+        </table>
+      </c-card-body>
+    </c-card>
+  </c-col>
+</c-row>
